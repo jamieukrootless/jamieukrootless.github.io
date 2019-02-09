@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+<title>Jamieuk tweak store</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+ a{
+ 	font-family:arial;
+ 	color:#000;
+ 	text-decoration:none;
+ }
+ body {
+   background-color: #A9A9A9;
+ }
+
+ .tweak {
+ 	padding:20px;
+  	box-shadow: 1px 2px 20px #c8c8c8;
+  	border-radius:20px;
+  	background-color:#C0C0C0;
+  	margin:5px;
+  	text-align:justify;
+  	width:80%;
+}
+.form-control{
+    	background-color:#C0C0C0;
+}
+</style>
+</head>
+<body>
+<center>
+
+<br>
+
+<input style="width:80%;margin:5px;box-shadow: 1px 2px 20px #c8c8c8;border-style:none;" class="form-control" id="myInput" type="text" placeholder="Search..">
+
+<br>
+
+<div id="myDIV">
+<br>
+<div class="tweak">
+<a href="prepatched/batterypercentx.zip">BatteryPercentX</a>
+</div>
+<br>
+<div class="tweak">
+<a href="prepatched/boxy.zip">Boxy</a>
+</div>
+<br>
+<div class="tweak">
+<a href="prepatched/cask.zip">Cask</a>
+</div>
+<br>
+<div class="tweak">
+<a href="prepatched/cercube.zip">Cercube</a>
+</div>
+<br>
+<div class="tweak">
+<a href="prepatched/coolcc.zip">CoolCC</a>
+</div>
+<br>
+<div class="tweak">
+<a href="prepatched/cylinder.zip">Cylinder</a>
+</div>
+<br>
+<div class="tweak">
+<a href="prepatched/dockxi.zip">DockXI</a>
+</div>
+<br>
+<div class="tweak">
+<a href="prepatched/equalizer.zip">Equalizer</a>
+</div>
+<br>
+<div class="tweak">
+<a href="prepatched/fakeclockup.zip">FakeClockUp</a>
+</div>
+<br>
+<div class="tweak">
+<a href="prepatched/fixprefrences.zip">FixPrefrences</a>
+</div>
+<br>
+<div class="tweak">
+<a href="prepatched/fluidity.zip">Fluidity</a>
+</div>
+<br>
+<div class="tweak">
+<a href="prepatched/frontcamunmirror.zip">FrontCamUnmirror</a>
+</div>
+<br>
+<div class="tweak">
+<a href="prepatched/hidedots11.zip">HideDots11</a>
+</div>
+<br>
+<div class="tweak">
+<a href="prepatched/lithiumion.zip">Lithiumion</a>
+</div>
+<br>
+<div class="tweak">
+<a href="prepatched/lockanimation.zip">LockAnimaton</a>
+</div>
+<br>
+<div class="tweak">
+<a href="prepatched/lockglyphxi.zip">LockGlyphXI</a>
+</div>
+<br>
+<div class="tweak">
+<a href="prepatched/musilyric.zip">Musilyric</a>
+</div>
+<br>
+<div class="tweak">
+<a href="prepatched/neptune.zip">Neptune</a>
+</div>
+<br>
+<div class="tweak">
+<a href="prepatched/nougatfolder.zip">NougatFolder</a>
+</div>
+<br>
+<div class="tweak">
+<a href="prepatched/palert.zip">Palert</a>
+</div>
+<br>
+<div class="tweak">
+<a href="prepatched/primalfolder.zip">PrimalFolder</a>
+</div>
+<br>
+<div class="tweak">
+<a href="prepatched/pulltorespring.zip">PullToRespring</a>
+</div>
+<br>
+<div class="tweak">
+<a href="prepatched/realcc.zip">RealCC</a>
+</div>
+<br>
+<div class="tweak">
+<a href="prepatched/romanpasscode.zip">Roman Passcode</a>
+</div>
+<br>
+<div class="tweak">
+<a href="prepatched/s8edge.zip">S8Edge</a>
+</div>
+<br>
+<div class="tweak">
+<a href="prepatched/silo.zip">Silo</a>
+</div>
+<br>
+<div class="tweak">
+<a href="prepatched/snowboard.zip">Snowboard</a>
+</div>
+<br>
+<div class="tweak">
+<a href="prepatched/speedintensifer.zip">SpeedIntensifer</a>
+</div>
+<br>
+<div class="tweak">
+<a href="prepatched/unicodefaces.zip">UnicodeFaces</a>
+</div>
+<br>
+<div class="tweak">
+<a href="prepatched/unlockvolx.zip">UnlockVolX</a>
+</div>
+<br>
+<div class="tweak">
+<a href="prepatched/volumehud.zip">VolumeHUD</a>
+</div>
+<br>
+<div class="tweak">
+<a href="prepatched/Zeppelin.zip">Zeppelin</a>
+</div>
+<br>
+</center>
+
+</div>
+
+</body>
+</html>
+
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myDIV *").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
